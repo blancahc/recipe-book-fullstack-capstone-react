@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+html {
+    background: url("images/spaghetti3.png") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/******LANDING PAGE AND SIGN UP PAGE******/
+
+.textBox {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+
+}
+
+h1 {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.7rem;
+    color: white;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.appName {
+    color: #d1282e;
+}
+
+#appFeatures li {
+    list-style-type: none;
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    background-color: darkred;
+    color: orangered;
+    cursor: pointer;
+}
+
+.sign-in-up-form {
+    vertical-align: middle;
+    font-weight: 600;
+    margin: 0 auto 30px auto;
+    background-color: #FFFF;
+    max-width: 350px;
+    border: black solid 1px;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    opacity: .9;
+    color: black;
+}
+
+.sign-in-up-form p {
+    color: dimgrey;
+    font-size: .8rem;
+
+}
+
+.demoInfo {
+    font-size: .9rem;
+    color: dimgray;
+}
+
+
+
+.sign-in-up-form legend {
+    margin: 0 auto 15px auto;
+    padding: 5px;
+    border-bottom: black solid 1px;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.sign-in-up-form fieldset {
+    border: none;
+    padding: 0 10px 0;
+    line-height: 3px;
+    text-align: left;
+}
+
+
+.sign-in-up-form input {
+    border: #0E2E45 1px solid;
+    width: 100%;
+    margin: 10px auto 20px;
+    padding: 5px;
+}
+
+
+.signInUpLink {
+    font-size: 1.2rem;
+    color: #d1282e;
+    text-align: center;
+    background-color: none;
+}
+
+.submit-button {
+    background-color: #d1282e;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    color: white;
+    display: block;
+}
+
+.saved-recipes {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    max-width: 850px;
+    margin: 0 auto 10px auto;
+    opacity: .9;
+    color: white;
+}
+
+/******NAVIGATION STYLES******/
+
+.logoImg {
+    width: 100px;
+    margin-top: 7px;
+    border-radius: 7px;
+}
+
+.navbar {
+    background-color: black;
+    opacity: .9;
+    margin: -10px auto 30px auto;
+    text-align: center;
+    max-width: 850px;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+
+}
+
+
+.nav-options li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.nav-options a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-options a:hover {
+    text-decoration: underline;
+}
+
+.signout-button {
+    background-color: #d1282e;
+    border-radius: 7px;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+#signoutButton:hover {
+    color: #0E2E45;
+    cursor: pointer;
+
+}
+
+/********View a List of all Recipes Page***********************************/
+
+.displayRecipes {
+    background-color: #d1282e;
+    opacity: .9;
+    max-width: 850px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.container p {
+    color: black;
+}
+
+/******Add Recipes form******/
+
+/* Style inputs, select elements and textareas */
+
+input[type=text],
+input[type=tags],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+/* Style the label to display next to the inputs */
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+}
+
+.radio-btns {
+    display: inline-block;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.ui.radio.checkbox {
+    margin: 5px;
+    display: inline-block;
+}
+
+select,
+option {
+    padding: 8px;
+}
+
+/* Style the container */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 850px;
+    margin: 0 auto 10px auto;
+}
+
+/* Floating column for labels: 25% width */
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/******Search for Recipe******/
+
+.inputGroup {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.search-text {
+    font-weight: 600;
+}
+
+/***********Added message************/
+
+#added-message {
+    margin: 60px auto 400px auto;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/******Footer STYLE******/
+
+footer {
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+    margin: 20px auto 0 auto;
+    opacity: .9;
+    padding: 10px;
+    max-width: 850px;
+    bottom: 0;
+    height: 60px;
+    color: white;
+
+}
+
+/******Media Queries******/
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        max-width: 500px;
+    }
+    footer {
+        max-width: 500px;
+    }
+
+    html {
+        font-size: 70%;
+    }
+
+    .col-25,
+    .col-75 {
+        width: 100%;
+        margin-top: auto;
+    }
+
+    #added-message {
+        font-size: 1.4rem;
+    }
+
+    input[type=text],
+    input[type=tags],
+    select,
+    textarea {
+        font-size-adjust: auto;
+    }
+
+    .logoImg {
+        width: 70px;
+    }
+}
+
+
+
+@media only screen and (max-width: 565px) {
+
+    .navbar {
+        width: 100%;
+    }
+
+    .logoImg {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .nav-options li {
+        margin: 0;
+        display: block;
+    }
+
+    footer {
+        width: 100%
+    }
+
+    html {
+        font-size: 60%;
+    }
+
+    h1 {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #added-message {
+        font-size: 1.7rem;
+
+    }
+
+
+}
