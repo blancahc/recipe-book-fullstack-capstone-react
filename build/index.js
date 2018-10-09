@@ -56,9 +56,13 @@
 	
 	var _reactRedux = __webpack_require__(17);
 	
-	var _header = __webpack_require__(49);
+	var _homePageNav = __webpack_require__(49);
 	
-	var _header2 = _interopRequireDefault(_header);
+	var _homePageNav2 = _interopRequireDefault(_homePageNav);
+	
+	var _footer = __webpack_require__(538);
+	
+	var _footer2 = _interopRequireDefault(_footer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -66,7 +70,11 @@
 	
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	                        return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
+	                        return _reactDom2.default.render(_react2.default.createElement(_homePageNav2.default, null), document.getElementById('reactHomePageNav'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	                        return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
 	});
 
 /***/ }),
@@ -24163,7 +24171,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.default = Header;
+	exports.default = HomePageNav;
 	
 	__webpack_require__(50);
 	
@@ -24187,24 +24195,20 @@
 	
 	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
 	
-	function Header(props) {
+	function HomePageNav(props) {
 	    return _react2.default.createElement(
-	        'header',
-	        null,
+	        'div',
+	        { className: 'navbar' },
+	        _react2.default.createElement('img', { className: 'logoImg', src: 'assets/images/logo.PNG', alt: 'savour saved logo image' }),
 	        _react2.default.createElement(
 	            'h1',
 	            null,
-	            'Not Just Luck'
-	        ),
-	        _react2.default.createElement(
-	            'a',
-	            { href: '#', id: 'js-signin-link', alt: 'Sign In' },
-	            'Sign In'
-	        ),
-	        _react2.default.createElement(
-	            'a',
-	            { href: '#', id: 'js-signout-link', alt: 'Sign Out' },
-	            'Sign Out'
+	            'Create your virtual recipe book with',
+	            _react2.default.createElement(
+	                'span',
+	                { className: 'appName' },
+	                'SavourSaved!'
+	            )
 	        )
 	    );
 	}
@@ -72871,6 +72875,51 @@
 	  return detectFiberTags;
 	}();
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ }),
+/* 538 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Footer;
+	
+	__webpack_require__(50);
+	
+	__webpack_require__(118);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(8);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(120);
+	
+	var _enzymeAdapterReact = __webpack_require__(518);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Footer(props) {
+	    return _react2.default.createElement(
+	        'footer',
+	        null,
+	        _react2.default.createElement(
+	            'p',
+	            null,
+	            'Blanca Hernandez | Copyright 2018'
+	        )
+	    );
+	}
 
 /***/ })
 /******/ ]);

@@ -1,10 +1,10 @@
 import React from 'react';
 import {shallow, mount, render} from 'enzyme';
 
-import Header from './header';
+import Footer from './footer';
 
-describe('<Header />', () => {
+describe('<Footer />', () => {
     it('Renders without crashing', () => {
-        shallow(<Header />);
+        shallow(<Footer />);
                 });
     });
