@@ -1,17 +1,16 @@
 # recipe-book-fullstack-capstone
-Live Pre-view available at ?....................?
+Node live pre-view available at https://recipe-book-capstone.herokuapp.com/
+React live pre-view available at https://blancahc.github.io/recipe-book-fullstack-capstone-react/build
 
 # Goal & Use Case
 
 This is a simple app where someone can search for, create his/her own recipes and save them like in a recipe book.
 
 # Screenshots
-![Landing Page](image link)
-![Sign-up page]()
-![Dashboard]()
-![Add Recipe]()
-![Search for Recipes]()
-![Detailed Recipe View]()
+![Landing Page](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/landing-page-ss.png)
+![Sign-up page](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/signup-page-ss.png)
+![Add Recipe](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/add-recipe-form-ss.png)
+![Detailed Recipe View](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/my-recipes-page-ss.png)
 # User Stories & Initial UX
 ![UI Flow](git-hub-images/ui-flow.jpg)
 **Landing Page**
@@ -22,17 +21,11 @@ This is a simple app where someone can search for, create his/her own recipes an
 2. As a visitor, I want to be able to easily sign-up to be able to use the application. In any page, I should be able to sign out.
 ![Sign-Up Page](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/signup.PNG)
 
-3. As a user, I want to be able to land on the dasboard, and be able see thumbnails of my recipes.
-![Dashboard Page](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/user-dashboard.PNG)
-
-4. As a user, I want to easily add my recipes.
+3. As a user, I want to easily add my recipes.
 ![Add Recipe](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/add-recipe.PNG)
 
-5. As a user, I want to be able to search for recipes in the web to copy and paste from into my app.
-![Search for recipes](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/search-recipe.PNG)
-
-6. As a user, I want to get a detailed view of my saved receipes when I click on a thumbnail.
-![Detailed Recipe View](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/Detailed-view.PNG)
+4. As a user, I want to get a detailed view of my saved receipes and search through them by title or tag.
+![Detailed Recipe View](https://github.com/blancahc/recipe-book-fullstack-capstone/blob/master/git-hub-images/my-recipes-page.jpg)
 
 # Technical stack
 
@@ -66,5 +59,15 @@ This is a simple app where someone can search for, create his/her own recipes an
 
 ## Node command lines
 * npm install ==> install all node modules
+    * npm install --save bcrypt bcryptjs body-parser cors express mongodb mongoose passport passport-http unirest
+    * npm install --save-dev chai chai-http mocha faker
 * nodemon server.js ==> run node server
+* npm test ==> run the tests
+
+## React command lines
+* npm install ==> install all node modules
+    * npm install --save bcrypt bcryptjs body-parser cheerio chokidar-cli concurrently core-js cors cpr enzyme enzyme-react-16-adapter-setup express http-server jsonwebtoken moment mongodb mongoose morgan npm-run-all passport passport-http passport-jwt passport-jwt-strategy react react-addons-test-utils react-dom react-fontawesome react-redux redux redux-thunk rimraf unirest
+    * npm install --save-dev acorn babel-cli babel-core babel-loader babel-plugin-transform-object-rest-spread babel-polyfill babel-preset-es2015 babel-preset-react chai chai-enzyme chai-http enzyme-adapter-react-15 enzyme-adapter-react-16 faker json-loader mkdirp mocha react-scripts react-test-renderer sinon sinon-chai webpack
+* npm run build ==> build the react files in the "build" folder
+* npm start ==> run react server on http://127.0.0.1:8080
 * npm test ==> run the tests
