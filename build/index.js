@@ -64,6 +64,10 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _aboutText = __webpack_require__(539);
+	
+	var _aboutText2 = _interopRequireDefault(_aboutText);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -75,6 +79,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	                        return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	                        return _reactDom2.default.render(_react2.default.createElement(_aboutText2.default, null), document.getElementById('reactAboutText'));
 	});
 
 /***/ }),
@@ -72917,6 +72925,69 @@
 	            'p',
 	            null,
 	            'Blanca Hernandez | Copyright 2018'
+	        )
+	    );
+	}
+
+/***/ }),
+/* 539 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = AboutText;
+	
+	__webpack_require__(50);
+	
+	__webpack_require__(118);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(8);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(120);
+	
+	var _enzymeAdapterReact = __webpack_require__(518);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function AboutText(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'textBox' },
+	        _react2.default.createElement(
+	            'div',
+	            { id: 'appFeatures' },
+	            _react2.default.createElement(
+	                'ul',
+	                null,
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    '~ Save your recipes ~'
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    '~ Easily search for your saved recipes ~'
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    '~ Share your recipes publicly (to appear in this page) ~'
+	                )
+	            )
 	        )
 	    );
 	}
