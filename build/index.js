@@ -73040,7 +73040,7 @@
 	        _react2.default.createElement('img', { className: 'logoImg', src: 'assets/images/logo.PNG', alt: 'savour recipe logo image' }),
 	        _react2.default.createElement(
 	            'span',
-	            { 'class': 'nav-options' },
+	            { className: 'nav-options' },
 	            _react2.default.createElement(
 	                'ul',
 	                null,
@@ -73067,7 +73067,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        'button',
-	                        { 'class': 'signout-button', id: 'js-signout-button', type: 'button' },
+	                        { className: 'signout-button', id: 'js-signout-button', type: 'button' },
 	                        ' Sign Out'
 	                    )
 	                )
