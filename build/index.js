@@ -68,6 +68,10 @@
 	
 	var _aboutText2 = _interopRequireDefault(_aboutText);
 	
+	var _userNav = __webpack_require__(540);
+	
+	var _userNav2 = _interopRequireDefault(_userNav);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -83,6 +87,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	                        return _reactDom2.default.render(_react2.default.createElement(_aboutText2.default, null), document.getElementById('reactAboutText'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	                        return _reactDom2.default.render(_react2.default.createElement(_userNav2.default, null), document.getElementById('reactUserNav'));
 	});
 
 /***/ }),
@@ -72986,6 +72994,82 @@
 	                    'li',
 	                    null,
 	                    '~ Share your recipes publicly (to appear in this page) ~'
+	                )
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 540 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = HomePageNav;
+	
+	__webpack_require__(50);
+	
+	__webpack_require__(118);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(8);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(120);
+	
+	var _enzymeAdapterReact = __webpack_require__(518);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function HomePageNav(props) {
+	    return _react2.default.createElement(
+	        'nav',
+	        { className: 'navbar' },
+	        _react2.default.createElement('img', { className: 'logoImg', src: 'assets/images/logo.PNG', alt: 'savour recipe logo image' }),
+	        _react2.default.createElement(
+	            'span',
+	            { 'class': 'nav-options' },
+	            _react2.default.createElement(
+	                'ul',
+	                null,
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { id: 'js-nav-my-recipes', href: '#' },
+	                        'My Recipes'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'a',
+	                        { id: 'js-nav-add-recipe', href: '#' },
+	                        'Add a Recipe'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                        'button',
+	                        { 'class': 'signout-button', id: 'js-signout-button', type: 'button' },
+	                        ' Sign Out'
+	                    )
 	                )
 	            )
 	        )
