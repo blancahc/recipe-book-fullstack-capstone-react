@@ -424,7 +424,7 @@ $('#js-sign-up-form').on('submit', function (event) {
 });
 
 //when someone clicks on sign-out button in navigation
-$('#js-signout-button').on('click', function (event) {
+$(document).on('click', '#js-signout-button', function (event) {
     location.reload();
 });
 
@@ -553,7 +553,7 @@ $(document).on('submit', '#js-edit-form', function (event) {
 });
 
 //Click on Add Recipe nav menu uption
-$('#js-nav-add-recipe').on('click', function (event) {
+$(document).on('click', '#js-nav-add-recipe', function (event) {
     event.preventDefault();
     clearFields();
     $('main').hide();
@@ -562,7 +562,7 @@ $('#js-nav-add-recipe').on('click', function (event) {
 });
 
 //Click on My Recipes nav menu uption
-$('#js-nav-my-recipes').on('click', function (event) {
+$(document).on('click', '#js-nav-my-recipes', function (event) {
     event.preventDefault();
     displayAddedRecipes();
     $('main').hide();

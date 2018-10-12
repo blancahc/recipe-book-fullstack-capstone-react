@@ -72,7 +72,7 @@
 	
 	var _userNav2 = _interopRequireDefault(_userNav);
 	
-	var _publicRecipes = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../js/components/public-recipes\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _publicRecipes = __webpack_require__(541);
 	
 	var _publicRecipes2 = _interopRequireDefault(_publicRecipes);
 	
@@ -73081,6 +73081,52 @@
 	                )
 	            )
 	        )
+	    );
+	}
+
+/***/ }),
+/* 541 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = PublicRecipes;
+	
+	__webpack_require__(50);
+	
+	__webpack_require__(118);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(8);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(120);
+	
+	var _enzymeAdapterReact = __webpack_require__(518);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function PublicRecipes(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	            'h2',
+	            { className: 'displayRecipes' },
+	            'Recipes Shared by SavourSaved users'
+	        ),
+	        _react2.default.createElement('div', { id: 'js-display-public-recipes' })
 	    );
 	}
 
