@@ -68,6 +68,10 @@
 	
 	var _aboutText2 = _interopRequireDefault(_aboutText);
 	
+	var _publicRecipes = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../js/components/public-recipes\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _publicRecipes2 = _interopRequireDefault(_publicRecipes);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -83,6 +87,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	                        return _reactDom2.default.render(_react2.default.createElement(_aboutText2.default, null), document.getElementById('reactAboutText'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	                        return _reactDom2.default.render(_react2.default.createElement(_publicRecipes2.default, null), document.getElementById('reactPublicRecipes'));
 	});
 
 /***/ }),

@@ -12,7 +12,6 @@ configure({ adapter: new Adapter() });
 export default function PublicRecipes (props) {
     return (
         <h2 className="displayRecipes"> Recipes Shared by SavourSaved users</h2>
-        <div id="js-display-public-recipes">
-        </div>
+        <div id="js-display-public-recipes"></div>
     )
 }
