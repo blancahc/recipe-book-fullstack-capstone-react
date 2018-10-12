@@ -92,6 +92,10 @@
 	document.addEventListener('DOMContentLoaded', function () {
 	                        return _reactDom2.default.render(_react2.default.createElement(_userNav2.default, null), document.getElementById('reactUserNav'));
 	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	                        return _reactDom2.default.render(_react2.default.createElement(_userNav2.default, null), document.getElementById('reactPublicRecipes'));
+	});
 
 /***/ }),
 /* 1 */

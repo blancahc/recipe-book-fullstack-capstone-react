@@ -7,7 +7,7 @@ import HomePageNav from '../js/components/home-page-nav';
 import Footer from '../js/components/footer';
 import AboutText from '../js/components/about-text';
 import UserNav from '../js/components/user-nav';
-import PublicRecipes from '../js/components/user-nav';
+import PublicRecipes from '../js/components/public-recipes';
 
 document.addEventListener('DOMContentLoaded', () =>
                           {return ReactDOM.render(<HomePageNav />,
