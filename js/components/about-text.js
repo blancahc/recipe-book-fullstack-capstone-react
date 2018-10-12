@@ -14,9 +14,12 @@ export default function AboutText (props) {
         <div className="textBox">
             <div id="appFeatures">
                 <ul>
-                    <li>~ Save your recipes ~</li>
-                    <li>~ Easily search for your saved recipes ~</li>
-                    <li>~ Share your recipes publicly (to appear in this page) ~</li>
+                    <li>~ Save your recipes ~
+                    </li>
+                    <li>~ Easily search for your saved recipes ~
+                    </li>
+                    <li>~ Share your recipes publicly (to appear in this page) ~
+                    </li>
                 </ul>
             </div>
         </div>
